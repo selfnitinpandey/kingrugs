@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- Hero Section -->
+<section class="position-relative" style="height: 100vh; overflow: hidden;">
+  
+  <!-- Background Image fills entire section -->
+  <img src="{{ url_for('static', filename='image/carpetimg3.jpg') }}" 
+       alt="Luxury Rugs"
+       style="
+          position: absolute;
+          top: 0; left: 0;
+          width: 100%;
+          height: 100%;
+          /* object-fit: cover; */
+          filter: brightness(50%);
+          z-index: -1;
+       ">
+
+  <!-- Centered Text -->
+  <div class="position-absolute top-50 start-50 translate-middle text-center text-white px-3" style="max-width: 900px;">
+    <h1 class="display-3 fw-bold mb-4 animate__animated animate__fadeInDown">
+      Transform Your Space with <span class="text-warning">Kings Rugs</span>
+    </h1>
+
+    <div class="animate__animated animate__fadeInUp animate__delay-1s" style="font-size: 1.1rem; line-height: 1.8;">
+      <p class="mb-3">
+        Welcome to The King Rugs — where exceptional quality, timeless style, and masterful craftsmanship transform your floors into works of art.
+
+        From cozy homes to grand estates and commercial spaces, we deliver premium carpets that blend comfort with elegance under every step.
+        
+        Our expert team guides you from selection to flawless installation, ensuring luxury, durability, and personalized perfection.
+        
+        Choose The King Rugs — step into a space that truly feels like royalty.
+      </p>
+    </div>
+  </div>
+
+</section>
+
+<!-- Highlight Section -->
+<section class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4 text-warning">Why Choose Us?</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="p-4 shadow rounded bg-white animate__animated animate__fadeInUp animate__delay-1s">
+          <h5 class="fw-bold">Premium Quality</h5>
+          <p class="text-muted">Each rug is made from the finest materials ensuring durability, beauty, and softness.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 shadow rounded bg-white animate__animated animate__fadeInUp animate__delay-2s">
+          <h5 class="fw-bold">Handcrafted Artistry</h5>
+          <p class="text-muted">Expert artisans weave tradition and culture into every design, making each rug unique.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 shadow rounded bg-white animate__animated animate__fadeInUp animate__delay-3s">
+          <h5 class="fw-bold">Custom Designs</h5>
+          <p class="text-muted">Get rugs tailored to your exact size, color, and design preferences for the perfect match to your space.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- About Section -->
+<section class="pt-0 pb-5" style="background-color: #f8f9fa;">
+    <div class="container">
+        <div class="row align-items-start"> <!-- align-items-start ensures content starts from top -->
+            <!-- About Image -->
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <img src="{{ url_for('static', filename='image/carpetimg1.jpg') }}" 
+                     alt="Kings Rugs" 
+                     class="img-fluid rounded shadow">
+            </div>
+
+            <!-- About Text -->
+            <div class="col-lg-6">
+                <h1 class="fw-bold text-warning mb-3">About Kings Rugs</h1>
+                <p class="lead text-muted">
+                    At <strong>Kings Rugs</strong>, we believe that a rug is more than just décor — 
+                    it’s a statement of elegance, culture, and comfort. 
+                </p>
+                <p>
+                    Welcome to The King Rugs — where quality, style, and craftsmanship come together to
+                    redefine what flooring can be. We specialize in premium carpet solutions for residential
+                    homes, commercial spaces, and luxury properties, delivering comfort and sophistication
+                    under every step.
+                </p><p>
+                    At The King Rugs, we believe flooring is more than a finishing touch — it’s the foundation
+                    of any great interior. That’s why we offer a carefully curated range of high-quality carpets
+                    designed to suit every lifestyle and aesthetic, from warm family living rooms to executive
+                    offices and grand estates.
+                </p><p>
+                    Our experienced team is dedicated to guiding you through every stage of your project —
+                    from personalized product selection to flawless installation. Whether you're refreshing a
+                    single room or outfitting an entire property, we bring professionalism, precision, and passion
+                    to every job.
+                    Luxury, durability, and style — all rolled into one.
+                    Choose The King Rugs and step into a space that truly feels like royalty
+                </p>
+                <a href="{{ url_for('products') }}" class="btn btn-warning text-dark fw-bold mt-3">
+                    Explore Our Collection
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

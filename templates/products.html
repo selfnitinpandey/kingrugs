@@ -1,0 +1,147 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- Product Section -->
+<section class="py-5" style="background-color: #f8f9fa;">
+    <div class="container">
+        <h1 class="fw-bold text-warning text-center mb-4">Our Carpets</h1>
+       
+
+        <div class="row g-4">
+            <!-- Product 1 -->
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm product-card">
+                    <div class="position-relative">
+                        <img src="{{ url_for('static', filename='image/product1.jpeg') }}" 
+                             class="card-img-top rounded" alt="Royal Persian Carpet">
+                        <div class="product-overlay p-3">
+                            <h5 class="fw-bold text-warning">Royal Persian Carpet</h5>
+                            <p class="text-white small">Handwoven wool, 8x10 ft, rich floral patterns.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm product-card">
+                    <div class="position-relative">
+                        <img src="{{ url_for('static', filename='image/product2.jpeg') }}" 
+                             class="card-img-top rounded" alt="Vintage Kashmiri Rug">
+                        <div class="product-overlay p-3">
+                            <h5 class="fw-bold text-warning">Vintage Kashmiri Rug</h5>
+                            <p class="text-white small">Silk blend, intricate paisley design, 6x9 ft.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm product-card">
+                    <div class="position-relative">
+                        <img src="{{ url_for('static', filename='image/product3.jpeg') }}" 
+                             class="card-img-top rounded" alt="Modern Abstract Rug">
+                        <div class="product-overlay p-3">
+                            <h5 class="fw-bold text-warning">Modern Abstract Rug</h5>
+                            <p class="text-white small">Soft synthetic fibers, stain-resistant, 5x8 ft.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm product-card">
+                    <div class="position-relative">
+                        <img src="{{ url_for('static', filename='image/product4.jpeg') }}" 
+                             class="card-img-top rounded" alt="Modern Abstract Rug">
+                        <div class="product-overlay p-3">
+                            <h5 class="fw-bold text-warning">Modern Abstract Rug</h5>
+                            <p class="text-white small">Soft synthetic fibers, stain-resistant, 5x8 ft.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                 <!-- Product 5 -->
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm product-card">
+                    <div class="position-relative">
+                        <img src="{{ url_for('static', filename='image/product5.jpeg') }}" 
+                             class="card-img-top rounded" alt="Modern Abstract Rug">
+                        <div class="product-overlay p-3">
+                            <h5 class="fw-bold text-warning">Modern Abstract Rug</h5>
+                            <p class="text-white small">Soft synthetic fibers, stain-resistant, 5x8 ft.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+                 <!-- Product 6 -->
+                 <div class="col-md-4">
+                    <div class="card border-0 shadow-sm product-card">
+                        <div class="position-relative">
+                            <img src="{{ url_for('static', filename='image/product6.jpeg') }}" 
+                                 class="card-img-top rounded" alt="Modern Abstract Rug">
+                            <div class="product-overlay p-3">
+                                <h5 class="fw-bold text-warning">Modern Abstract Rug</h5>
+                                <p class="text-white small">Soft synthetic fibers, stain-resistant, 5x8 ft.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+
+                 <!-- Product 7 -->
+                 <div class="col-md-4">
+                    <div class="card border-0 shadow-sm product-card">
+                        <div class="position-relative">
+                            <img src="{{ url_for('static', filename='image/product7.jpeg') }}" 
+                                 class="card-img-top rounded" alt="Modern Abstract Rug">
+                            <div class="product-overlay p-3">
+                                <h5 class="fw-bold text-warning">Modern Abstract Rug</h5>
+                                <p class="text-white small">Soft synthetic fibers, stain-resistant, 5x8 ft.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            
+        </div>
+    </div>
+</section>
+
+<style>
+    .product-card {
+        overflow: hidden;
+    }
+    .product-card img {
+        height: 300px; /* all images same height */
+        width: 100%;
+        object-fit: cover; /* crop and keep aspect ratio */
+        transition: transform 0.4s ease;
+    }
+    .product-card:hover img {
+        transform: scale(1.05);
+    }
+    .product-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.75);
+        color: #fff;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        border-bottom-left-radius: .25rem;
+        border-bottom-right-radius: .25rem;
+    }
+    .product-card:hover .product-overlay {
+        opacity: 1;
+    }
+    </style>
+
+
+{% endblock %}

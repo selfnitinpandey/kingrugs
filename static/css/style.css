@@ -1,0 +1,11 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar-brand strong {
+    font-size: 1.3rem;
+}
+
+footer {
+    font-size: 0.9rem;
+}
