@@ -9,3 +9,11 @@ body {
 footer {
     font-size: 0.9rem;
 }
+
+.social-link:hover i.bi-facebook {
+    color: #1877F2; /* Facebook Blue */
+  }
+  .social-link:hover i.bi-instagram {
+    color: #E1306C; /* Instagram Pink */
+  }
+  

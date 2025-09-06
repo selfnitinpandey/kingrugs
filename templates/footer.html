@@ -1,41 +1,57 @@
 <footer class="bg-light text-dark pt-4 mt-auto">
     <div class="container">
-        <div class="row">
-            <!-- About Section -->
-            <div class="col-md-4 mb-3">
-                <h5 class="text-warning fw-bold">Kings Rugs</h5>
-                <p class="small">
-                    Kings Rugs — Premium handcrafted rugs that blend timeless tradition with modern elegance. Woven from the finest materials for unmatched softness, durability, and charm. From royal classics to contemporary designs, our collection adds warmth, luxury, and personality to every space. Experience the art beneath your feet — perfection your home deserves.
-                </p>
-            </div>
-
-            <!-- Quick Links -->
-            <div class="col-md-4 mb-3">
-                <h5 class="text-warning fw-bold">Quick Links</h5>
-                <ul class="list-unstyled">
-                    <li><a href="{{ url_for('home') }}" class="text-dark text-decoration-none">Home</a></li>
-                    <li><a href="{{ url_for('products') }}" class="text-dark text-decoration-none">Product</a></li>
-                    <li><a href="{{ url_for('about') }}" class="text-dark text-decoration-none">About</a></li>
-                    <li><a href="{{ url_for('contact') }}" class="text-dark text-decoration-none">Contact Us</a></li>
-                </ul>
-            </div>
-
-            <!-- Contact Info -->
-            <div class="col-md-4 mb-3">
-                <h5 class="text-warning fw-bold">Contact Us</h5>
-                <p class="small mb-1"><i class="bi bi-geo-alt-fill text-warning"></i> 145 Bhadohi Gopiganj Road, Bhadohi, 
-                    Uttar pradesh, India, 221303
-                </p>
-                <p class="small mb-1"><i class="bi bi-telephone-fill text-warning"></i> +91-9876543210</p>
-                <p class="small"><i class="bi bi-envelope-fill text-warning"></i> support@kingsrugs.com</p>
-            </div>
+      <div class="row">
+        <!-- About Section -->
+        <div class="col-md-3 mb-3">
+          <h5 class="text-warning fw-bold">The King Rugs</h5>
+          <p class="small">
+            The King Rugs — Handcrafted rugs blending tradition and modern elegance, crafted for unmatched comfort, style, and luxury in your home.
+          </p>
         </div>
-        
-        <hr class="border-secondary">
-
-        <!-- Copyright -->
-        <div class="text-center pb-3">
-            <small class="text-muted">&copy; {{ current_year if current_year else '2025' }} Kings Rugs. All Rights Reserved.</small>
+  
+        <!-- Quick Links -->
+        <div class="col-md-3 mb-3">
+          <h5 class="text-warning fw-bold">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="{{ url_for('home') }}" class="text-dark text-decoration-none">Home</a></li>
+            <li><a href="{{ url_for('products') }}" class="text-dark text-decoration-none">Product</a></li>
+            <li><a href="{{ url_for('about') }}" class="text-dark text-decoration-none">About</a></li>
+            <li><a href="{{ url_for('contact') }}" class="text-dark text-decoration-none">Contact Us</a></li>
+          </ul>
         </div>
+  
+        <!-- Contact Info -->
+        <div class="col-md-3 mb-3">
+          <h5 class="text-warning fw-bold">Contact Us</h5>
+          <p class="small mb-1">
+            <i class="bi bi-geo-alt-fill text-warning"></i> 145 Bhadohi Gopiganj Road, Bhadohi, Uttar Pradesh, India, 221303
+          </p>
+          <p class="small mb-1">
+            <i class="bi bi-telephone-fill text-warning"></i> +91 8853152715
+          </p>
+          <p class="small">
+            <i class="bi bi-envelope-fill text-warning"></i> thekingrugs@rediffmail.com
+          </p>
+        </div>
+  
+        <!-- Social Media -->
+        <div class="col-md-3 mb-3">
+          <h5 class="text-warning fw-bold">Follow Us</h5>
+          <a href="https://www.facebook.com/the.king.rugs?rdid=moNxLxmEJfDILc26&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1Pj9sBDPFS%2F#" target="_blank" class="text-dark fs-5 me-3 social-link">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/naushadali120693" target="_blank" class="text-dark fs-5 social-link">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </div>
+      </div>
     </div>
-</footer>
+  
+    <!-- Dark Bottom Bar -->
+    <div class="bg-dark text-center py-2">
+      <small class="text-light">
+        &copy; {{ current_year if current_year else '2025' }} The King Rugs. All Rights Reserved.
+      </small>
+    </div>
+  </footer>
+  

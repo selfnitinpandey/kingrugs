@@ -9,19 +9,19 @@ def inject_year():
 
 @app.route("/")
 def home():
-    return render_template("home.html", title="Home | Kings Rugs")
+    return render_template("home.html", title="Home | The King Rugs")
 
 @app.route("/products")
 def products():
-    return render_template("products.html", title="Our Products | Kings Rugs")
+    return render_template("products.html", title="Products | The King Rugss")
 
 @app.route("/about")
 def about():
-    return render_template("about.html", title="About Us | Kings Rugs")
+    return render_template("about.html", title="About Us | The King Rugs")
 
 @app.route("/contact")
 def contact():
-    return render_template("contact.html", title="Contact Us | Kings Rugs")
+    return render_template("contact.html", title="Contact Us | The King Rugs")
 
 if __name__ == "__main__":
     app.run(debug=True)
